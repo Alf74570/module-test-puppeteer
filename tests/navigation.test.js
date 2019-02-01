@@ -43,14 +43,13 @@ describe("Tests du Header", () => {
         await page.type('input[name=username]', 'Admin');
         await page.type('input[name=password]', 'campus');
         await page.waitForSelector('input[name=login]');
-        await page.$eval('input[name=login]', el => el.click());
-        const html = await page.$eval('#navbar li.dropdown a', el => el.text);
+        await page.$eval('input[name=login]', e => e.click());
+        const html = await page.$eval('#navbar li.dropdown a', e => e.text);
         expect(html).toEqual("Admin ");
 
     }, timeout);
 
     beforeAll(async () => {
-        // ouvrir un onglet dans le navigateur
         page = await global.__BROWSER__.newPage()
     }, timeout)
 });
