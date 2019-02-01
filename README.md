@@ -3,7 +3,7 @@ Tests avec puppeteer
 
 Repo cloned from https://github.com/le-campus-numerique/module-test-puppeteer - Based on the work done by Philippe Le Van
 
-[![Build Status](https://travis-ci.org/campus-digital-grenoble/module-test-puppeteer.svg?branch=master)](https://travis-ci.org/campus-digital-grenoble/module-test-puppeteer)
+[![Build Status](https://travis-ci.org/Alf74570/module-test-puppeteer.svg?branch=master)](https://travis-ci.org/Alf74570/module-test-puppeteer)
 
 Quick start
 -----------
