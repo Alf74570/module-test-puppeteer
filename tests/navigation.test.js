@@ -36,8 +36,8 @@ describe("Tests du Header", () => {
 
     test('Connexion', async () => {
         await page.goto('http://polr.alwaysdata.net');
-        await page.waitForSelector('#navbar li.dropdown a');
-        await page.$eval('#navbar li.dropdown a', el => el.click());
+        await page.waitForSelector('.dropdown-toggle');
+        await page.$eval('.dropdown-toggle', el => el.click());
         await page.waitForSelector('input[name=username]');
         await page.waitForSelector('input[name=password]');
         await page.type('input[name=username]', 'Admin');
