@@ -1,7 +1,10 @@
 {
   "private": true,
   "scripts": {
-    "test": "./node_modules/.bin/jest"
+    "test": "./node_modules/.bin/jest",
+    "citest": "CI=true react-scripts test --env=jsdom",
+    "precommit": "npm run citest",
+    "prepush": "npm run citest"
   },
   "engines": {
     "node": "8.*",
@@ -12,5 +15,8 @@
     "jest-cli": "^23.5.0",
     "jest-puppeteer": "^3.3.1",
     "puppeteer": "^1.7.0"
+  },
+  "dependencies": {
+    "husky": "^1.3.1"
   }
 }
